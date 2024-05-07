@@ -8,7 +8,7 @@ YouTube Series: https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD
 - Hidden Layers: Multiple layers that process the input through weighted connections.
 - Output Layer: Produces the final prediction or classification.
 
-![alt text](image-1.png)  
+![alt text](images/image-1.png)  
 
 - called neural network because it looks like a network 
 - data starts at input layer
@@ -20,9 +20,8 @@ YouTube Series: https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD
 - each connection == weight
 - each neuron == bias
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 - as we can see the amount of parameters can grow to huge amounts
-
 
 
