@@ -7,4 +7,4 @@ Basic Steps of Neural Network:
 - Input Layer: Receives input data.
 - Hidden Layers: Multiple layers that process the input through weighted connections.
 - Output Layer: Produces the final prediction or classification.
-![alt text](image.png)
+![alt text](image-1.png)
