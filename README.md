@@ -1,4 +1,6 @@
-# Neural Networks
+# Creating an Artificial Neural Network from Scratch, with an Application For Time Series Quantitative Trading
+
+![alt text](images/image-1.png)  
 
 YouTube Series: https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3
 
