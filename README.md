@@ -24,4 +24,9 @@ YouTube Series: https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD
 
 - as we can see the amount of parameters can grow to huge amounts
 
+- inputs can be from the input layer, but they can also be outputs from other neurons
 
+- weights have a multiplicative effect
+- biases have an additive effect
+
+- arrays need to be homologous, meaning at each dimension they need to have the same size
