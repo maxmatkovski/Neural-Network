@@ -1,55 +1,55 @@
-# Creating an Artificial Neural Network from Scratch, with an Application For Time Series Quantitative Trading
+# Creating an Artificial Neural Network from Scratch, with an Application for Time Series Quantitative Trading
 
-![alt text](images/image-1.png)  
+![Neural Network Diagram](images/image-1.png)
 
-YouTube Series: https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3
+## YouTube Series
+Explore this topic through the YouTube series: [Neural Networks for Quantitative Trading](https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3)
 
-## Basic Steps of Neural Network:
+## Basic Steps of a Neural Network:
 ### 1. Basic Structure
-- Input Layer: Receives input data.
-- Hidden Layers: Multiple layers that process the input through weighted connections.
-- Output Layer: Produces the final prediction or classification.
+- **Input Layer**: Receives the input data.
+- **Hidden Layers**: Consist of multiple layers that process the input through weighted connections.
+- **Output Layer**: Produces the final prediction or classification.
 
-![alt text](images/image-1.png)  
+![Neural Network Flow](images/image-1.png)
 
-- called neural network because it looks like a network 
-- data starts at input layer
-- input --> hidden layer 1 --> hidden layer 2 --> output layer
+- The model is termed a neural network because it resembles a network.
+- Data flows from the input layer to multiple hidden layers and finally to the output layer.
+- For example, if classifying between a cat or a dog, the output layer will have two neurons.
+- The training process involves tuning the "weights and biases".
 
-- if we're classifying cat or dog, we will have two output neurons
-- tuning the "weights and biases" is the process of training the neural network
+![Neural Network Parameters](images/image.png)
 
-- each connection == weight
-- each neuron == bias
+- Note that the number of parameters can grow significantly.
+- Inputs can originate from the input layer or be outputs from other neurons.
+- Weights have a multiplicative effect, whereas biases have an additive effect.
+- Arrays must be homologous, meaning each dimension must be of the same size.
 
-![alt text](images/image.png)
+#### Talking About Shape
+- It's common to encounter shape errors in deep learning.
 
-- as we can see the amount of parameters can grow to huge amounts
+Examples of array structures:
 
-- inputs can be from the input layer, but they can also be outputs from other neurons
+**1D Array (Vector):**
+- Array: [1, 5, 6, 2]
+- Shape: (4,)
 
-- weights have a multiplicative effect
-- biases have an additive effect
+**2D Array (Matrix):**
+- Array: 
+        [[1, 5, 6, 2],
+        [3, 2, 1, 3]]
 
-- arrays need to be homologous, meaning at each dimension they need to have the same size
+- Shape: (2, 4)
 
-#### talking about shape
-- common to get shape errors in deep learning problems
+- A tensor is an object that can be represented as an array.
 
-array: 1 = [1,5,6,2]
-shape: (4,)
-type: 1d array, vector
+#### Dot Product
+Example calculation of a dot product:
 
-array: [[1,5,6,2],
-        [3,2,1,3]] (list of lists)
-shape: (2,4)
-type: 2d array, matrix
+- Arrays:
+- a = [1, 2, 3]
+- b = [2, 3, 4]
 
-- a tensor is an object *that can be represented as an array*
-
-#### dot product
-a = [1,2,3]
-b = [2,3,4]
-
-dot_product = (a[0] x b[0]) + (a[1] x b[1]) + (a[2] x b[2])
-dot_product >> 20
+- Calculation:
+- dot_product = (a[0] * b[0]) + (a[1] * b[1]) + (a[2] * b[2])
+- Result: 20
