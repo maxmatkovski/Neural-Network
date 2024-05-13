@@ -1,11 +1,16 @@
 # Creating an Artificial Neural Network from Scratch, with an Application for Time Series Quantitative Trading
 
-![Neural Network Diagram](images/image-1.png)
+## Motivation For Project
 
-#### Motivation For Project
+As someone who has studied deep learning in school, I've always been intrigued by the operational intricacies of neural networks. While my coursework provided a foundational understanding, the true complexities and capabilities of these models are best grasped through hands-on experience. Instead of relying solely on high-level frameworks like Keras or TensorFlow, I decided to challenge myself by constructing a basic neural network from scratch. This project aims to strip down the often opaque layers of machine learning libraries, revealing the core mechanisms that drive neural computations. By programming the fundamental components—such as activation functions, weight updates, and backpropagation—I hope to demystify how networks learn and make decisions from data. 
+
+## What even is a Neural Network? 
+
+This topic has been particularly fascinating to me because in my undergraduate studies, I studied Cognitive Science, Computer Science which consisted mostly of Neuroscience, Computer Science, and Psychology. Neural networks are the meeting point of these three disciplines.
+
+A neural network is a computational model inspired by the structure of the brain, designed to recognize patterns and make decisions based on input data. Like the human brain, which is composed of neurons interconnected by synapses, a neural network consists of layers of artificial neurons or "nodes" connected by weighted paths.  These weights adjust as the network learns from data, mimicking the process of synaptic strengthening or weakening in biological neurons. Each artificial neuron processes its inputs using a mathematical function to produce an output, which then serves as input to subsequent layers. The goal of this architecture is to simulate the learning capabilities of the brain, enabling the machine to improve its performance on tasks such as image recognition, language processing, and decision-making through experience, much like a human learns from sensory inputs.
 
 ![alt text](image.png)
-
 
 ## YouTube Series
 Explore this topic through the YouTube series: [Neural Networks for Quantitative Trading](https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3)
