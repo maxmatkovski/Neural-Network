@@ -1,6 +1,6 @@
 import numpy as np 
+import nnfs
 
-np.random.seed(0)
 
 X = [[1,2,3,2.5],
      [2.0,5.0,-1.0,2.0],
@@ -13,6 +13,12 @@ class Layer_Dense():
 
     def forward(self, inputs):
         self.output = np.dot(inputs, self.weights) + self.biases
+
+class Activation_ReLu:
+    def forward(self, inputs):
+        self.output = np.maximum(0,inputs) # same thing as a ReLu function
+
+
 
 layer1 = Layer_Dense(4,5)
 layer2 = Layer_Dense(5,2)
