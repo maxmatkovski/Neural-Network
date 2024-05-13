@@ -1,8 +1,13 @@
 # Creating an Artificial Neural Network from Scratch, with an Application for Time Series Quantitative Trading
 
+## YouTube Series
+Explore this topic through the YouTube series: [Neural Networks for Quantitative Trading](https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3)
+
 ## Motivation For Project
 
-As someone who has studied deep learning in school, I've always been intrigued by the operational intricacies of neural networks. While my coursework provided a foundational understanding, the true complexities and capabilities of these models are best grasped through hands-on experience. Instead of relying solely on high-level frameworks like Keras or TensorFlow, I decided to challenge myself by constructing a basic neural network from scratch. This project aims to strip down the often opaque layers of machine learning libraries, revealing the core mechanisms that drive neural computations. By programming the fundamental components—such as activation functions, weight updates, and backpropagation—I hope to demystify how networks learn and make decisions from data. 
+As someone who has studied deep learning in school, I've always been intrigued by the operational intricacies of neural networks. While my coursework provided a foundational understanding, the true complexities and capabilities of these models are best grasped through hands-on experience. Instead of relying solely on high-level frameworks like Keras or TensorFlow, I decided to challenge myself by constructing a basic neural network from scratch. This project aims to strip down the often opaque layers of machine learning libraries, revealing the core mechanisms that drive neural computations. 
+
+
 
 ## What even is a Neural Network? 
 
@@ -12,9 +17,6 @@ A neural network is a computational model inspired by the structure of the brain
 
 ![alt text](image.png)
 
-## YouTube Series
-Explore this topic through the YouTube series: [Neural Networks for Quantitative Trading](https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3)
-
 Eventual goal: make neural network for foreign commodity option contracts. 
 
 ## Basic Steps of a Neural Network:
@@ -23,7 +25,6 @@ Eventual goal: make neural network for foreign commodity option contracts.
 - **Hidden Layers**: Consist of multiple layers that process the input through weighted connections.
 - **Output Layer**: Produces the final prediction or classification.
 
-![Neural Network Flow](images/image-1.png)
 
 - The model is termed a neural network because it resembles a network.
 - Data flows from the input layer to multiple hidden layers and finally to the output layer.
