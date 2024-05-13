@@ -17,6 +17,13 @@ import matplotlib.pyplot as plt
 
 print("here")
 X,y = create_data(100,3)
+
+plt.scatter(X[:,0],X[:,1])
+plt.show()
+
+plt.scatter(X[:,0],X[:,1], c=y, cmap="brg")
+plt.show()
+
 # X = [[1,2,3,2.5],
 #      [2.0,5.0,-1.0,2.0],
 #      [-1.5,2.7,3.3,-0.8]]

@@ -2,6 +2,11 @@
 
 ![Neural Network Diagram](images/image-1.png)
 
+#### Motivation For Project
+
+![alt text](image.png)
+
+
 ## YouTube Series
 Explore this topic through the YouTube series: [Neural Networks for Quantitative Trading](https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3)
 
@@ -75,3 +80,17 @@ weights =  [[0.2, 0.8, -0.5, 1.0],
 #### shape error
 - in dot product len(element1[1]) must == len(element2[0])
 - to fix this we need to transpose (swap rows and columns)
+
+#### Activation Functions
+- Step function 
+- Sigmoid function (0 or 1 output)
+        - more granular than the step function
+- ReLu (Rectified Linear Unit)
+        - it's faster than sigmoid
+- do a deep dive on why activation functions are unique and the power they add to none linearity
+
+#### softmax
+
+exponentiation
+what is eulers number? 
+normalization
