@@ -1,59 +1,56 @@
 # Creating an Artificial Neural Network from Scratch, with an Application for Time Series Quantitative Trading
 
 ## YouTube Series
-Explore this topic through our YouTube series: [Neural Networks for Quantitative Trading](https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3)
+Delve deeper into the subject with our YouTube series: [Neural Networks for Quantitative Trading](https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3)
 
 ## Motivation For Project
 
-Having studied deep learning in school, I've been captivated by the operational intricacies of neural networks. Although my coursework laid the foundational understanding, hands-on experience is unrivaled for grasping the true complexities and capabilities of these models. Eschewing high-level frameworks like Keras or TensorFlow, I've embarked on a journey to build a basic neural network from scratch. This project is designed to peel back the often opaque layers of machine learning libraries, exposing the core mechanisms that govern neural computations.
+My academic journey through deep learning in school sparked a profound interest in the operational intricacies of neural networks. While my coursework laid a solid foundation, I realized that mastering the true complexities and capabilities of these models requires hands-on experimentation. By moving away from high-level frameworks like Keras or TensorFlow, and opting to build a neural network from scratch, this project aims to uncover the core mechanisms that drive neural computations, offering a clearer view into the inner workings of machine learning.
 
 ## What even is a Neural Network?
 
-My academic background in Cognitive Science, Neuroscience, Computer Science, and Psychology converge in my fascination with neural networks, the technological nexus of these disciplines. A neural network is a computational model inspired by the brain's structure, designed to recognize patterns and make decisions from input data. Comprising layers of interconnected artificial neurons, these networks adjust their synaptic weights in response to data, akin to biological learning processes. This architecture aims to mimic human learning capabilities, enhancing machine performance across tasks like image recognition, language processing, and decision-making.
+With a background in Cognitive Science, Neuroscience, Computer Science, and Psychology, I find neural networks fascinating as they represent a convergence of these fields. A neural network is a computational framework inspired by the structure of the brain, designed to recognize patterns and make decisions from input data. It consists of layers of artificial neurons or "nodes" interconnected by weighted paths. These weights are dynamically adjusted based on the network's exposure to data, analogous to synaptic adjustments in biological neurons. Each neuron computes its output using a mathematical function, which then becomes input for the next layer. The primary goal of this architecture is to emulate the learning processes of the brain, allowing the machine to enhance its abilities in complex tasks like image recognition, language processing, and strategic decision-making, similar to human learning from experience.
 
-![Neural Network Concept](image.png)
+![Neural Network Concept](images/image-2.png)
 
-**Eventual Goal:** Develop a neural network for trading foreign commodity option contracts.
+**Eventual Goal:** To develop a neural network capable of trading foreign commodity option contracts effectively.
 
 ## Basic Steps of a Neural Network:
 
 ### 1. Basic Structure
-- **Input Layer**: Receives the input data.
-- **Hidden Layers**: Consist of multiple layers that process the input through weighted connections.
-- **Output Layer**: Produces the final prediction or classification, e.g., classifying between a cat or a dog using two neurons.
+- **Input Layer**: The entry point for input data, where each neuron corresponds to a unique feature of the dataset.
+- **Hidden Layers**: Intermediate layers that process inputs through a series of weighted connections, learning complex patterns and relationships in the data.
+- **Output Layer**: Delivers the final output of the network, such as a prediction or classification, depending on the task (e.g., a binary classification for a cat vs. dog decision).
+
+### 2. Forward Propagation
+- **Data Flow**: Input data flows through the network from the input layer to the output layer via hidden layers.
+- **Activation Functions**: These are crucial for introducing non-linearity into the network, enabling it to learn and perform more complex tasks than mere linear classification.
+
+### 3. Loss Calculation
+- **Objective**: Post forward propagation, the network computes its performance by comparing the output with the true labels using a loss function.
+- **Loss Function Examples**: Mean squared error for regression tasks, and cross-entropy loss for classification tasks.
+
+### 4. Backpropagation
+- **Purpose**: To refine the weights of the network by minimizing the loss. This process involves the backward propagation of the error gradient, adjusting weights to reduce discrepancies between actual and predicted outputs.
+- **Optimization Algorithms**: Such as Gradient Descent, which incrementally adjusts weights to minimize the loss function.
+
+### 5. Iteration and Convergence
+- **Epochs**: The entire process of forward propagation, loss calculation, and backpropagation is repeated over multiple iterations, known as epochs, until the model's accuracy plateaus or achieves a predetermined level of performance.
+
+### 6. Model Evaluation
+- **Validation**: Post-training, the model is validated against a set of data that was not used during training to check its generalization capabilities.
+- **Testing**: The final step, testing, involves evaluating the model against completely unseen data to ensure it performs well under new conditions.
 
 ### Key Concepts and Terminology:
-- **Neural Network Model**: Resembles a network where data flows from the input layer through multiple hidden layers to the output layer.
-- **Training Process**: Involves tuning the "weights and biases" to refine the model's predictions.
+- **Parameters Growth**: The complexity and size of parameters can expand significantly with each added layer or neuron, influencing both the computational demand and the model's capacity to learn finer details.
+- **Homogeneity in Arrays**: Ensuring that data arrays and weights are properly aligned in shape for matrix operations is crucial to avoid runtime errors.
 
-![Neural Network Parameters](images/image.png)
+### Advanced Topics:
+- **Activation Functions Detailed**:
+  - **Sigmoid**: Offers a smooth gradient, useful for outputs between 0 and 1.
+  - **ReLU**: Provides a simple, efficient non-linear transformation, which is less computationally expensive than sigmoid and helps with faster convergence.
+  - **Softmax**: Converts logits to probabilities, commonly used in the output layer of a classifier to interpret the neural outputs as probabilities.
 
-- **Parameters**: Note that the number of parameters can grow significantly, influencing computational complexity.
-- **Arrays and Shape**: Inputs and outputs must be homogenously shaped to ensure proper matrix operations.
-
-### Common Array Structures:
-
-**1D Array (Vector):**
-- Example: [1, 5, 6, 2]
-- Shape: (4,)
-
-**2D Array (Matrix):**
-- Example:
-[[1, 5, 6, 2],
-[3, 2, 1, 3]]
-
-- Shape: (2, 4)
-
-### Dot Product and Batching:
-- **Dot Product**: Essential for calculating the weighted sum of inputs and weights; order matters due to matrix dimensions.
-- **Batching**: Improves training efficiency by leveraging parallel computation capabilities of GPUs, which significantly outnumber those in CPUs. Optimal batch sizes (e.g., 32, 64, or 128) balance the risks of overfitting and underfitting.
-
-### Activation Functions:
-- **Step Function**: Binary output.
-- **Sigmoid Function**: Continuous output between 0 and 1, providing granularity.
-- **ReLU (Rectified Linear Unit)**: Offers computational efficiency and is preferred in many modern networks.
-
-#### Further Exploration:
-- **Softmax Function**: Used for multi-class categorization, applying exponentiation and normalization to convert logits to probabilities.
-
-
+### Practical Considerations:
+- **Batching**: Grouping large sets of data into batches allows for more efficient computation, particularly on GPUs, which are optimized for parallel processing over CPUs.
+- **Overfitting vs. Underfitting**: Balancing
