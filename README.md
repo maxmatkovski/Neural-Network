@@ -5,6 +5,8 @@
 ## YouTube Series
 Explore this topic through the YouTube series: [Neural Networks for Quantitative Trading](https://www.youtube.com/watch?v=Wo5dMEP_BbI&list=PLQVvvaa0QuDcjD5BAw2DxE6OF2tius3V3)
 
+Eventual goal: make neural network for foreign commodity option contracts. 
+
 ## Basic Steps of a Neural Network:
 ### 1. Basic Structure
 - **Input Layer**: Receives the input data.
@@ -61,3 +63,15 @@ inputs = [1,2,3,2.5]
 weights =  [[0.2, 0.8, -0.5, 1.0],
             [0.5, -0.91, 0.26, -0.5],
             [-0.26, -0.27, 0.17, 0.87]]
+
+#### batching 
+- the more things you can do in parallel the better 
+- this is why neural network training is done usually on gpus which have thousands of cores, compared to cpus which only have 4 or 8 cores. 
+- when we batch the amount of samples (show multiple samples to the model) the model does better and is trained more efficiently
+- small batch sizes have aan increased risk of overfitting 
+- large batch size have an increased risk of underfitting
+- usual batch size is 32 -- sometimes 64 or 128
+
+#### shape error
+- in dot product len(element1[1]) must == len(element2[0])
+- to fix this we need to transpose (swap rows and columns)
