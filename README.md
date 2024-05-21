@@ -97,6 +97,18 @@ weights =  [[0.2, 0.8, -0.5, 1.0],
 
 #### softmax
 
+- softmax activation function
+        - want output values of neural net to be a probability distribution
+        - relu will turn a negative number into a zero so the probability distribution gets screwed up
+        - also we need to deal with negative values in the output of the network
+
 exponentiation
+- y = e ^ x
+        - solves negative issue but keeps the information of the negatives compared to abs 
 what is eulers number? 
-normalization
+
+normalization 
+- value over total sum 
+
+#### calculating loss with categorial cross - entropy
+
