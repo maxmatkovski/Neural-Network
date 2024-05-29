@@ -112,3 +112,10 @@ normalization
 
 #### calculating loss with categorial cross - entropy
 
+- provides our metric for error
+- if we only account for accuracy (correctness of binary prediction) we would lose a lot of information 
+- loss function provides a more nuanced answer than accuracy
+- categorical cross entropy used a lot in classification problems
+-  natural log is base e
+
+![alt text](images/image-3.png)
